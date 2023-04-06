@@ -1,0 +1,89 @@
+/* Google Fonts Import Link */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --width-sidebar: 300px;
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    overflow: hidden;
+}
+
+.genshin-sidebar {
+    width: var(--width-sidebar);
+    background: #11101d;
+}
+
+.genshin-sidebar .genshin-nav-links::-webkit-scrollbar {
+    display: none;
+}
+
+.genshin-sidebar .genshin-nav-links li:hover {
+    background: #1d1b31;
+}
+
+.genshin-sidebar .genshin-nav-links li.showMenu .gesnhin-sub-menu {
+    display: block;
+}
+
+.genshin-sidebar .genshin-nav-links li .gesnhin-sub-menu {
+    background: #1d1b31;
+    color: #fff;
+}
+
+.genshin-sidebar .genshin-nav-links li .gesnhin-sub-menu.blank {
+    opacity: 1;
+    pointer-events: auto;
+    padding: 3px 20px 6px 16px;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.genshin-sidebar .genshin-nav-links li:hover .gesnhin-sub-menu.blank {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.genshin-sidebar .genshin-nav-links li .gesnhin-sub-menu .menu-dot {
+    margin-right: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.home-section {
+    position: relative;
+    background: #E4E9F7;
+    height: 100vh;
+    left: var(--width-sidebar);
+    width: calc(100% - var(--width-sidebar));
+    transition: all 0.5s ease-in-out;
+    padding: 12px;
+}
+
+.home-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.home-section .home-content .text {
+    color: #11101d;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+

@@ -7556,7 +7556,6 @@ export const characters = {
     id: 'traveler_dendro',
     name: 'Traveler (Dendro)',
     rarity: 5,
-    element: elements.dendro,
     weapon: weapons.sword,
     stats: {
       hp: 10875,
