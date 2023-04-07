@@ -7,7 +7,10 @@ function GenshinArtifacts() {
     return (
         <>
             <Sidebar />
-            <h1>GenshinArtifacts</h1>
+
+            <section className="main-section">
+                <span className="text-black text-6xl font-black">Artifacts</span>
+            </section>
         </>
     )
 }

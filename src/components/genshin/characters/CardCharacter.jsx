@@ -10,8 +10,9 @@ function CardCharacter() {
     //     console.log(key, value)
     // })
     return (
-        <>
-        </>
+        <div className="">
+            
+        </div>
     )
 }
 

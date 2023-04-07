@@ -7,7 +7,10 @@ function GenshinItems() {
     return (
         <>
             <Sidebar />
-            <h1>GenshinItems</h1>
+
+            <section className="main-section">
+                <span className="text-black text-6xl font-black">Items</span>
+            </section>
         </>
     )
 }

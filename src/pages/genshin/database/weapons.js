@@ -7,7 +7,10 @@ function GenshinWeapons() {
     return (
         <>
             <Sidebar />
-            <h1>GenshinWeapons</h1>
+
+            <section className="main-section">
+                <span className="text-black text-6xl font-black">Weapons</span>
+            </section>
         </>
     )
 }
