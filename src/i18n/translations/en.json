@@ -1,0 +1,15 @@
+{
+    "translation": {
+        "sidebar": {
+            "home": "Home",
+            "characters": "Characters",
+            "database": {
+                "name": "Database",
+                "items": "Items",
+                "weapons": "Weapons",
+                "artifacts": "Artifacts"
+            },
+            "settings": "Settings"
+        }
+    }
+}

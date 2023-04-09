@@ -1,0 +1,15 @@
+{
+    "translation": {
+        "sidebar": {
+            "home": "Bem Vindo",
+            "characters": "Personagens",
+            "database": {
+                "name": "Base de Dados",
+                "items": "Itens",
+                "weapons": "Armas",
+                "artifacts": "Artefaos"
+            },
+            "settings": "Definicoes"
+        }
+    }
+}

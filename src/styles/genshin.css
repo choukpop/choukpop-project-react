@@ -65,13 +65,9 @@ body {
 
 
 .main-section {
-    position: relative;
     background: #E4E9F7;
-    height: 100vh;
     left: var(--width-sidebar);
-    width: calc(100% - var(--width-sidebar));
-    transition: all 0.5s ease-in-out;
-    padding: 12px;
+    /* width: calc(100% - var(--width-sidebar)); */
 }
 
 
