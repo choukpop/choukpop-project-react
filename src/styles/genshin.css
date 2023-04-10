@@ -3,6 +3,9 @@
 
 :root {
     --width-sidebar: 250px;
+
+    --primary-color: #202442;
+    --secondary-color: #25294A;
 }
 
 * {
@@ -15,44 +18,20 @@ body {
 
 .genshin-sidebar {
     width: var(--width-sidebar);
-    background: #11101d;
+    background: var(--primary-color);
 }
 
 .genshin-sidebar .genshin-nav-links::-webkit-scrollbar {
     display: none;
 }
 
-.genshin-sidebar .genshin-nav-links li:hover {
-    background: #1d1b31;
-}
-
-.genshin-sidebar .genshin-nav-links li.showMenu .gesnhin-sub-menu {
+.genshin-sidebar .genshin-nav-links li.show-menu .gesnhin-sub-menu {
     display: block;
 }
 
-.genshin-sidebar .genshin-nav-links li .gesnhin-sub-menu {
-    background: #1d1b31;
-    color: #fff;
+.genshin-sidebar .genshin-language {
+    width: var(--width-sidebar);
 }
-
-.genshin-sidebar .genshin-nav-links li .gesnhin-sub-menu.blank {
-    opacity: 1;
-    pointer-events: auto;
-    padding: 3px 20px 6px 16px;
-    opacity: 0;
-    pointer-events: none;
-}
-
-.genshin-sidebar .genshin-nav-links li:hover .gesnhin-sub-menu.blank {
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.genshin-sidebar .genshin-nav-links li .gesnhin-sub-menu .menu-dot {
-    margin-right: 10px;
-}
-
-
 
 
 
