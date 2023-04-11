@@ -1,5 +1,3 @@
-/* Google Fonts Import Link */
-@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     --width-sidebar: 250px;
@@ -8,11 +6,7 @@
     --secondary-color: #25294A;
 }
 
-* {
-    font-family: 'Catamaran', sans-serif;
-}
-
-body {
+.genshin-body {
     overflow: hidden;
 }
 
@@ -32,16 +26,6 @@ body {
 .genshin-sidebar .genshin-language {
     width: var(--width-sidebar);
 }
-
-
-
-
-
-
-
-
-
-
 
 .main-section {
     background: #E4E9F7;

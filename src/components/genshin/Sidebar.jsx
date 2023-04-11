@@ -3,8 +3,10 @@ import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
-import Language from '../language'
+//! Components
+import Language from './../language'
 
+//! Icons
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
 
 function Sidebar() {
