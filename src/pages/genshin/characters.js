@@ -9,10 +9,10 @@ function GenshinCharacters() {
         <>
             <Sidebar />
 
-            <section className="main-section relative h-screen duration-500 ease-in-out">
+            <section className="main-section relative h-screen duration-500 ease-in-out" style={{ backgroundColor: "var(--secondary-color)" }}>
                 <span className="text-black text-6xl font-black">Characters</span>
 
-                <div className="px-4 md:pl-6 md:pr-4 flex flex-wrap max-w-screen-xl mt-2">
+                <div className="px-4 flex flex-wrap mt-2">
                     <CardCharacter />
                 </div>
             </section>

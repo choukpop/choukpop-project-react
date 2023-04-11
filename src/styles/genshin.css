@@ -27,10 +27,22 @@
     width: var(--width-sidebar);
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 .main-section {
-    background: #E4E9F7;
     left: var(--width-sidebar);
-    /* width: calc(100% - var(--width-sidebar)); */
+    width: calc(100% - var(--width-sidebar));
 }
 
 

@@ -1,11 +1,14 @@
+
 import { Route, Routes } from "react-router-dom"
 
+//! Import CSS
 import "./styles/globals.css"
 import "./styles/genshin.css"
 
 import { NotFound } from "./NotFound"
 import Home from "./pages/Home"
 
+//! JS Pages
 import GenshinHome from "./pages/genshin"
 import GenshinCharacter from "./pages/genshin/characters"
 import GenshinItems from "./pages/genshin/database/items"

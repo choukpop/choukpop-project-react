@@ -16,7 +16,7 @@ function Sidebar() {
     return (
         <section className="genshin-sidebar fixed top-[0] left-[0] h-full z-[100] duration-500 transition-all ease-in-out">
             <div className="genshin-name-details py-4 w-full flex items-center justify-center">
-                <Link className="genshin-name text-white opacity-50 hover:opacity-100 text-4xl font-semibold duration-500 ease-in-out delay-100" to="/">ChouKpop</Link>
+                <Link className="genshin-name text-white text-4xl font-semibold duration-500 ease-in-out delay-100" to="/">ChouKpop</Link>
             </div>
 
             <ul className="genshin-nav-links w-full h-full py-4 px-0">
