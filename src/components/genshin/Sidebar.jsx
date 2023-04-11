@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 
 //! Components
-import Language from './../language'
+import Language from './language/index'
 
 //! Icons
 import { FaChevronDown, FaChevronUp } from 'react-icons/fa'
