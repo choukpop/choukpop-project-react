@@ -1,20 +1,20 @@
 
-import { Route, Routes } from "react-router-dom"
+import { Route, Routes } from 'react-router-dom'
 
 //! Import CSS
-import "./styles/globals.css"
-import "./styles/genshin.css"
+import './styles/globals.css'
+import './styles/genshin.css'
 
-import { NotFound } from "./NotFound"
-import Home from "./pages/Home"
+import { NotFound } from './NotFound'
+import Home from './pages/Home'
 
 //! JS Pages
-import GenshinHome from "./pages/genshin"
-import GenshinCharacter from "./pages/genshin/characters"
-import GenshinItems from "./pages/genshin/database/items"
-import GenshinWeapons from "./pages/genshin/database/weapons"
-import GenshinArtifacts from "./pages/genshin/database/artifacts"
-import GenshinSettings from "./pages/genshin/settings"
+import GenshinHome from './pages/genshin/index'
+import GenshinCharacter from './pages/genshin/characters'
+import GenshinItems from './pages/genshin/database/items'
+import GenshinWeapons from './pages/genshin/database/weapons'
+import GenshinArtifacts from './pages/genshin/database/artifacts'
+import GenshinSettings from './pages/genshin/settings'
 
 function App() {
     return (

@@ -1,7 +1,7 @@
 
 import React from 'react'
 
-import Sidebar from '../../components/genshin/Sidebar'
+import Sidebar from '../../components/genshin/sidebar/Sidebar'
 import CardCharacter from '../../components/genshin/characters/CardCharacter'
 
 function GenshinCharacters() {
