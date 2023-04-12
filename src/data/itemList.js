@@ -861,8 +861,6 @@ export const itemList = {
 
   runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
 
-  runic_fang: { id: 'runic_fang', name: 'Runic Fang', rarity: 4 },
-
   teachings_of_admonition: {
     id: 'teachings_of_admonition',
     name: 'Teachings of Admonition',
