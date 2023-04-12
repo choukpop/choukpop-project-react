@@ -1,9 +1,9 @@
-
 :root {
     --width-sidebar: 250px;
 
     --primary-color: #202442;
     --secondary-color: #25294A;
+    --bg-item: #2D325A;
 }
 
 .genshin-body {
@@ -27,24 +27,33 @@
     width: var(--width-sidebar);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-.main-section {
-    left: var(--width-sidebar);
-    width: calc(100% - var(--width-sidebar));
+.gesnhin-small-text {
+    font-size: 12px;
+    line-height: 1;
+    padding-bottom: 3px;
+    word-spacing: 200px;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+.genshin-main-section {
+    left: var(--width-sidebar);
+    width: calc(100% - var(--width-sidebar));
+    height: 100vh;
+}
+
+@media only screen and (max-width: 1650px) {
+    .genshin-main-section {
+        height: 100%;
+    } 
+}
 

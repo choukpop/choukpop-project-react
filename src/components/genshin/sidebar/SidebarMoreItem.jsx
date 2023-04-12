@@ -21,7 +21,7 @@ function SidebarMoreItem({ image, label, items }) {
 
             <ul className="gesnhin-sub-menu pl-20 hidden">
                 {items.map((item) =>
-                    <li className="my-4 opacity-50 hover:opacity-100 duration-300 ease-in-out cursor-pointer">
+                    <li key={item.label} className="my-4 opacity-50 hover:opacity-100 duration-300 ease-in-out cursor-pointer">
                         <Link
                             to={item.href}
                             className="text-white text-lg font-normal py-2 px-0 whitespace-nowrap select-none"

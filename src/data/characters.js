@@ -7400,8 +7400,8 @@ export const characters = {
     element: elements.dendro,
   },
   traveler_anemo: {
-    name: 'Traveler (Anemo)',
     id: 'traveler_anemo',
+    name: 'Traveler (Anemo)',
     rarity: 5,
     element: elements.anemo,
     weapon: weapons.sword,
@@ -7491,8 +7491,8 @@ export const characters = {
     },
   },
   traveler_geo: {
-    name: 'Traveler (Geo)',
     id: 'traveler_geo',
+    name: 'Traveler (Geo)',
     rarity: 5,
     element: elements.geo,
     weapon: weapons.sword,
@@ -7607,8 +7607,8 @@ export const characters = {
     },
   },
   traveler_electro: {
-    name: 'Traveler (Electro)',
     id: 'traveler_electro',
+    name: 'Traveler (Electro)',
     rarity: 5,
     element: elements.electro,
     weapon: weapons.sword,
