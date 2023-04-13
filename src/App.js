@@ -10,7 +10,8 @@ import Home from './pages/Home'
 
 //! JS Pages
 import GenshinHome from './pages/genshin/index'
-import GenshinCharacter from './pages/genshin/characters'
+import GenshinCharacters from './pages/genshin/characters'
+import GenshinCharacterSelected from './pages/genshin/character_selected'
 import GenshinItems from './pages/genshin/database/items'
 import GenshinWeapons from './pages/genshin/database/weapons'
 import GenshinArtifacts from './pages/genshin/database/artifacts'
@@ -24,7 +25,10 @@ function App() {
                 
                 {/* Genshin Impact Page */}
                 <Route path="/genshin" element={<GenshinHome />} />
-                <Route path="/genshin/characters" element={<GenshinCharacter />} />
+                <Route path="/genshin/characters">
+                    <Route index element={<GenshinCharacters />} />
+                    <Route path=":id" element={<GenshinCharacterSelected />} />
+                </Route>
 
                 <Route path="/genshin/database/items" element={<GenshinItems />} />
                 <Route path="/genshin/database/weapons" element={<GenshinWeapons />} />
