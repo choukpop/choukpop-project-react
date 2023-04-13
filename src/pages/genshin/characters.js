@@ -22,7 +22,7 @@ function GenshinCharacters() {
             <Sidebar />
 
             <section className="genshin-main-section relative duration-500 ease-in-out" style={{ backgroundColor: "var(--secondary-color)" }}>
-                <span className="text-black text-6xl font-black">Characters</span>
+                <span className="text-white text-6xl font-black">Characters</span>
 
                 {/* Add Filters */}
 
@@ -31,7 +31,7 @@ function GenshinCharacters() {
                         <CardCharacter
                             key={item.id}
                             id={item.id}
-                            href="/genshin/character"
+                            href="/genshin/characters"
                             name={item.name}
                             rary={item.rarity}
                             elementId={item.element.id}
