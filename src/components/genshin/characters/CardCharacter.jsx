@@ -14,7 +14,8 @@ function CardCharacter({ id, href, name, rary, elementId, elementName }) {
             />
 
             <img
-                className="absolute p-1 top-2 right-2 bg-black rounded-full flex items-center shadow-md"
+                className="absolute p-1 top-2 right-2 rounded-full flex items-center shadow-md"
+                style={{ backgroundColor: "var(--fourth-color)" }}
                 width="24"
                 height="24"
                 src={`/images/elements/${elementId}.png`}

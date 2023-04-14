@@ -51,3 +51,13 @@
         max-width: 800px;
     }
 }
+
+.genshin-filter-item:hover {
+    background-color: var(--fourth-color);
+    opacity: 1;
+}
+
+.genshin-filter-item.active {
+    background-color: var(--fourth-color);
+    opacity: 1;
+}

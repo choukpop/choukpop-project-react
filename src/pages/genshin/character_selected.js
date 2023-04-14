@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom'
 
 //! Components
 import Sidebar from '../../components/genshin/sidebar/Sidebar'
-import Footbar from '../../components/genshin/Footbar'
 
 //! Data
 // import { characters } from '../../data/characters'
@@ -30,7 +29,7 @@ function GenshinCharacter() {
 
 
 
-    
+
 
     // get current lang 'en'or 'pt'
     // const { i18n } = useTranslation()
@@ -53,11 +52,12 @@ function GenshinCharacter() {
         <>
             <Sidebar />
 
-            <section className="genshin-main-section relative duration-500 ease-in-out" style={{ backgroundColor: "var(--secondary-color)" }}>
-                <span className="text-white text-6xl font-black">Character: {id}</span>
+            <section className="genshin-main-section mx-auto relative duration-300 ease-in-out" style={{ backgroundColor: "var(--secondary-color)" }}>
+                <div className="flex flex-wrap flex-col mx-0">
+                    <span className="text-white text-6xl font-black">Character: {id}</span>
                     {/* <img src={`/images/skills/${id}/talent_1.png`} alt={`${id}_talent`} /> */}
-                <Footbar />
-            </section>
+                </div>
+            </section >
         </>
     )
 }
