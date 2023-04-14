@@ -8,7 +8,7 @@ function GenshinItems() {
         <>
             <Sidebar />
 
-            <section className="main-section relative h-screen duration-500 ease-in-out">
+            <section className="genshin-main-section relative duration-300 ease-in-out p-8">
                 <span className="text-white text-6xl font-black">Items</span>
             </section>
         </>

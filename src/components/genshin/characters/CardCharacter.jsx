@@ -4,25 +4,29 @@ import { Link } from 'react-router-dom'
 
 function CardCharacter({ id, href, name, rary, elementId, elementName }) {
     return (
-        <Link to={href + `/${id}`} className="mx-2 my-6 w-24 h-24 relative cursor-pointer transition duration-100 opacity-60 hover:opacity-100 hover:shadow-xl rounded-xl">
-            <div className={"w-full rounded-t-xl bg-opacity-50 overflow-hidden " + (rary === 5 ? "bg-legendary-from" : "bg-rare-from")}>
-                <img className="w-full h-full" width="106" height="106" src={`/images/characters/${id}.png`} alt={id} />
-            </div>
+        <Link to={href + `/${id}`} className="w-[12.5%] p-4 relative flex flex-col justify-center items-center cursor-pointer transition duration-200 opacity-50 hover:opacity-100 hover:shadow-xl rounded-xl">
+            <img
+                className={"rounded-t-xl overflow-hidden " + (rary === 5 ? "bg-legendary-from" : "bg-rare-from")}
+                width="100"
+                height="100"
+                src={`/images/characters/${id}.png`}
+                alt={id}
+            />
 
-            <div
-                className="absolute top-0 right-0 bg-black bg-opacity-75 rounded-full flex items-center shadow-md"
-                style={{ padding: "4px", margin: "-10px" }}
+            <img
+                className="absolute p-1 top-2 right-2 bg-black rounded-full flex items-center shadow-md"
+                width="24"
+                height="24"
+                src={`/images/elements/${elementId}.png`}
+                alt={elementName}
+            />
+
+            <h2
+                className={"text-white p-1 text-center text-sm rounded-b-xl w-full h-[30px] " + (name.length > 10 ? "gesnhin-small-text" : "")}
+                style={{ backgroundColor: "var(--fourth-color)" }}
             >
-                <img className="w-4 h-4" src={`/images/elements/${elementId}.png`} alt={elementName} />
-            </div>
-
-            <div className="rounded-b-xl" style={{ height: "29px", backgroundColor: "var(--bg-item)" }}>
-                <div className="w-full">
-                    <p className={"text-white p-1 text-center text-sm " + (name.length > 10 ? "gesnhin-small-text" : "")}>
-                        {name}
-                    </p>
-                </div>
-            </div>
+                {name}
+            </h2>
         </Link>
     )
 }

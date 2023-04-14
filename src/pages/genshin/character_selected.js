@@ -1,32 +1,53 @@
 
-import React, { useEffect } from 'react'
+import React, { useEffect, useState } from 'react'
 import { useParams } from 'react-router-dom'
-import { useTranslation } from 'react-i18next'
 
 //! Components
 import Sidebar from '../../components/genshin/sidebar/Sidebar'
 import Footbar from '../../components/genshin/Footbar'
 
 //! Data
-import { characters } from '../../data/characters'
+// import { characters } from '../../data/characters'
+import { builds } from '../../data/build'
 
 function GenshinCharacter() {
-    // get id char
+    const [character, setCharacter] = useState("")
+
+    // get id char from url
     const { id } = useParams()
+    const currentCharacter = id
 
-    // get current lang 'en'
-    const { i18n } = useTranslation()
-
-    async function changeLocale(locale) {
-        const _data = await import(`../../data/artifacts/${locale}.json`)
-        console.log(_data.default)
-        // artifact = _data.default[id]
+    async function getSelectedCharacter(id) {
+        const _data = await import(`../../data/characterData/${id}.json`)
+        setCharacter(_data.default)
     }
 
-    let currentLang = i18n.language
+
+
+
+
+
+
+
+
+    
+
+    // get current lang 'en'or 'pt'
+    // const { i18n } = useTranslation()
+
+    // async function changeLocale(locale) {
+    //     const _data = await import(`../../data/artifacts/${locale}.json`)
+    //     console.log(_data.default)
+    // }
+
+    // let currentLang = i18n.language
+    // useEffect(() => {
+    //     changeLocale(currentLang)
+    // }, [currentLang])
+
     useEffect(() => {
-        changeLocale(currentLang)
-    }, [currentLang])
+        getSelectedCharacter(currentCharacter)
+    }, [currentCharacter])
 
     return (
         <>
@@ -34,7 +55,7 @@ function GenshinCharacter() {
 
             <section className="genshin-main-section relative duration-500 ease-in-out" style={{ backgroundColor: "var(--secondary-color)" }}>
                 <span className="text-white text-6xl font-black">Character: {id}</span>
-
+                    {/* <img src={`/images/skills/${id}/talent_1.png`} alt={`${id}_talent`} /> */}
                 <Footbar />
             </section>
         </>

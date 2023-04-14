@@ -1,4 +1,116 @@
 export const builds = {
+  raiden_shogun: {
+    roles: {
+      HYPERBLOOM: {
+        recommended: false,
+        weapons: [
+          {
+            id: 'dragons_bane',
+          },
+          {
+            id: 'moonpiercer',
+          },
+          {
+            id: 'kitain_cross_spear',
+          },
+        ],
+        artifacts: [['gilded_dreams'], ['gilded_dreams', 'wanderers_troupe'], ['thundering_fury']],
+        mainStats: {
+          sands: ['Elemental Mastery'],
+          goblet: ['Elemental Mastery'],
+          circlet: ['Elemental Mastery'],
+        },
+        subStats: ['Elemental Mastery', 'ATK%', 'Energy Recharge', 'Crit Rate/ DMG'],
+        talent: ['Skill', 'Burst'],
+        tip: 'You are aiming for between 850-1000+ Elemental mastery depending on weapon/artifact choice.',
+        note: "<b></b>In this build Raiden is used as a <b>Hyperbloom trigger unit</b> in a dendro team. She is <b>one of the best units in the game for this role</b>. Bringing <b>greater energy particle generation, a faster rate of seed triggering and a team ult buff</b> in exchange for reduced team flexibility compared to another top hyperbloom triggering unit like Kuki.\n\n<b>Regarding Artifact Choices:\nGilded Dreams (2) / Wanderer's Troupe (2): </b>In a team with one other electro unit it's only <b>1 substat roll behind Gilded Dreams (4)</b> (3-4 substat rolls behind in a team with no other electro units) therefore you can usually just <b>use the set with the most Elemental Mastery substat rolls </b>on it.<b>\nThundering Fury (4): </b>Only really a consideration if you have a completed set of it already, with a <b>higher number of Elemental Mastery substat rolls</b>, or as a placeholder set while you farm other sets.\n<b>\n</b>\n\nEM is essentially your only priority",
+      },
+      DPS: {
+        recommended: true,
+        weapons: [
+          {
+            id: 'engulfing_lightning',
+          },
+          {
+            id: 'staff_of_homa',
+          },
+          {
+            id: 'primordial_jade_winged-spear',
+          },
+          {
+            id: 'calamity_queller',
+          },
+          {
+            id: 'the_catch',
+            refine: [5],
+          },
+          {
+            id: 'vortex_vanquisher',
+          },
+          {
+            id: 'deathmatch',
+          },
+          {
+            id: 'wavebreakers_fin',
+          },
+          {
+            id: 'lithic_spear',
+          },
+          {
+            id: 'favonius_lance',
+          },
+          {
+            id: 'prototype_starglitter',
+          },
+          {
+            id: 'blackcliff_pole',
+          },
+          {
+            id: 'white_tassel',
+          },
+        ],
+        artifacts: [
+          ['emblem_of_severed_fate'],
+          ['noblesse_oblige', 'thundering_fury', '+18%_atk_set', 'emblem_of_severed_fate'],
+          ['tenacity_of_the_millelith'],
+        ],
+        mainStats: {
+          sands: ['Energy Recharge', 'ATK%'],
+          goblet: ['Electro DMG', 'ATK%'],
+          circlet: ['Crit Rate', 'DMG'],
+        },
+        subStats: ['Crit Rate / DMG', 'ATK%', 'Energy Recharge', 'Elemental Mastery', 'Flat ATK'],
+        talent: ['Burst', 'Skill'],
+        tip: "Start your rotation with Raiden's Elemental Skill to amplify your party member's Elemental Burst damage.\n\nBurst combo :\n- Skill > Burst > 3NA + CA (3 times) > 1NA + CA (Recommended)\n- Skill > Burst > 3NA + CA (3 times) > 4NA (Optimal)\n\n*NA = Normal Attack, CA = Charged Attack\n\nThe recommended combo can be performed consistently even without attack speed buffs, the optimal combo while a tad stronger is also significantly more difficult to perform.",
+        note: "Raiden's Elemental Burst damage depends on her <b>team's energy consumption prior to her Burst</b>, and her Burst <b>restores a comfortable amount of energy for her team</b> (which is further amplified by her passive). This is especially convenient on teams that doesn't conflict with her element and wants the energy provision. (i.e. Eula, Electro, National teams, etc.). Raiden has no issues with firing her ult off cooldown after reaching about 200% Energy Recharge, but it is possible to raise it higher for better energy restoration for her team.\n\n<b>Regarding Weapon Choices: This list assumes the average across a variety of buffs. \nSkyward Spine: </b>Assumes that you are utilizing the ATK SPD buff to access higher damage combos. \n<b>Wavebreaker's Fin: </b>At <b>[R5], </b>this weapon is relatively equal to <b>Staff of Homa,</b> depending on your total team burst cost.\n\n<b>Regarding Artifact Sets:\nTenacity of the Millelith (4): </b>This set acts as a low investment support oriented set. Raiden is an excellent <b>Tenacity of the Millelith (4)</b> holder since her Elemental Skill has 100% uptime and procs very easily. Do note that if your Raiden is equipping this set, then she will sacrifice her personal damage.\n<b>\nRegarding Main Stats Priority: \n</b>Raiden's main stat priority for Sands and Goblet entirely depends on the substats, whether she has external buffs, and which weapon she is running. You can find a more detailed list of suggestions from <a href=\"https://docs.google.com/spreadsheets/d/1VdRUAKFUoKkceIghV5tCfr3kfoiH59mcFOMorI9jYrw/edit\">ZΛNTO#4984's mastersheet here</a><a href=\"https://docs.google.com/spreadsheets/d/1VdRUAKFUoKkceIghV5tCfr3kfoiH59mcFOMorI9jYrw/edit\"> </a>or run it on a calculator/optimizer",
+      },
+    },
+  },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   amber: {
     roles: {
       DPS: {
@@ -1656,93 +1768,6 @@ export const builds = {
         talent: ['Normal Attack', 'Burst', 'Skill'],
         tip: "Preferred Skill Combo: ES (Place stiletto, don't reactivate yet) -> EB -> ES (Reactivation) -> Spam AA -> Repeat\n\nRegarding Roles:\nBoth physical and electro keqing are good and viable. You'd usually want to decide which build to go for depending on your weapon gacha luck. For example, Lion's Roar = Electro, Flute will be equally good on Electro/Phys, etc.",
         note: "<b>Regarding Weapon Choices: \nLion's Roar: </b>This weapon is only recommended on Aggravate / Pure Electro / Electro-charged teams. In teams where the Electro Aura can be easily removed OR when facing enemies with innate elements, this weapon <b>will severely underperform.</b> \n<b>The Black Sword:</b> On a quickswap Keqing, this weapon will be shifted below <b>Harbinger of Dawn</b> <b>[R5]</b>.\n\n<b>Regarding Artifact Sets: \nThundering Fury (4): </b>This set provides the highest damage output if you are running Keqing in an <b>Aggravate</b>-based team composition. <b>\nThundering Fury (2) +18% ATK set (2): </b>This set is a generalist set, which means it can be used generally anywhere, whether it be Co-op or Abyss, or other singleplayer content. This has a lot of consistency due to its independence from electro aura, and it is more viable in abyss.\n<b>+18% ATK set (2) / +18% ATK set (2): </b>While it is slightly behind <b>Thundering Fury (2) +18% ATK set (2)</b>, this set is preferred to farm for due to the resin efficiency of <b>Shimenawa's Reminiscence's</b> Domain.\n<b>Thundersoother (4): </b>This set should be used with <b>Electro-charged</b> team compositions (Keqing + Xingqiu), and can also be a good alternative for Keqing in <b>Aggravate</b> team compositions if you don't have <b>Thundering Fury (4)</b>. This set has a 35% DMG modifier which increases all damage from all sources, although that modifier is a bit unstable due to its dependency to the sustainability of Electro aura on enemies.\n\nNote: Since Keqing uses burst to get an extra 15% crit, it's much better in leveling it.  Best course of action is to level NA and Burst together. Don't forget to level skill to a decent level.",
-      },
-    },
-  },
-  raiden_shogun: {
-    roles: {
-      HYPERBLOOM: {
-        recommended: false,
-        weapons: [
-          {
-            id: 'dragons_bane',
-          },
-          {
-            id: 'moonpiercer',
-          },
-          {
-            id: 'kitain_cross_spear',
-          },
-        ],
-        artifacts: [['gilded_dreams'], ['gilded_dreams', 'wanderers_troupe'], ['thundering_fury']],
-        mainStats: {
-          sands: ['Elemental Mastery'],
-          goblet: ['Elemental Mastery'],
-          circlet: ['Elemental Mastery'],
-        },
-        subStats: ['Elemental Mastery', 'ATK%', 'Energy Recharge', 'Crit Rate/ DMG'],
-        talent: ['Skill', 'Burst'],
-        tip: 'You are aiming for between 850-1000+ Elemental mastery depending on weapon/artifact choice.',
-        note: "<b></b>In this build Raiden is used as a <b>Hyperbloom trigger unit</b> in a dendro team. She is <b>one of the best units in the game for this role</b>. Bringing <b>greater energy particle generation, a faster rate of seed triggering and a team ult buff</b> in exchange for reduced team flexibility compared to another top hyperbloom triggering unit like Kuki.\n\n<b>Regarding Artifact Choices:\nGilded Dreams (2) / Wanderer's Troupe (2): </b>In a team with one other electro unit it's only <b>1 substat roll behind Gilded Dreams (4)</b> (3-4 substat rolls behind in a team with no other electro units) therefore you can usually just <b>use the set with the most Elemental Mastery substat rolls </b>on it.<b>\nThundering Fury (4): </b>Only really a consideration if you have a completed set of it already, with a <b>higher number of Elemental Mastery substat rolls</b>, or as a placeholder set while you farm other sets.\n<b>\n</b>\n\nEM is essentially your only priority",
-      },
-      DPS: {
-        recommended: true,
-        weapons: [
-          {
-            id: 'engulfing_lightning',
-          },
-          {
-            id: 'staff_of_homa',
-          },
-          {
-            id: 'primordial_jade_winged-spear',
-          },
-          {
-            id: 'calamity_queller',
-          },
-          {
-            id: 'the_catch',
-            refine: [5],
-          },
-          {
-            id: 'vortex_vanquisher',
-          },
-          {
-            id: 'deathmatch',
-          },
-          {
-            id: 'wavebreakers_fin',
-          },
-          {
-            id: 'lithic_spear',
-          },
-          {
-            id: 'favonius_lance',
-          },
-          {
-            id: 'prototype_starglitter',
-          },
-          {
-            id: 'blackcliff_pole',
-          },
-          {
-            id: 'white_tassel',
-          },
-        ],
-        artifacts: [
-          ['emblem_of_severed_fate'],
-          ['noblesse_oblige', 'thundering_fury', '+18%_atk_set', 'emblem_of_severed_fate'],
-          ['tenacity_of_the_millelith'],
-        ],
-        mainStats: {
-          sands: ['Energy Recharge', 'ATK%'],
-          goblet: ['Electro DMG', 'ATK%'],
-          circlet: ['Crit Rate', 'DMG'],
-        },
-        subStats: ['Crit Rate / DMG', 'ATK%', 'Energy Recharge', 'Elemental Mastery', 'Flat ATK'],
-        talent: ['Burst', 'Skill'],
-        tip: "Start your rotation with Raiden's Elemental Skill to amplify your party member's Elemental Burst damage.\n\nBurst combo :\n- Skill > Burst > 3NA + CA (3 times) > 1NA + CA (Recommended)\n- Skill > Burst > 3NA + CA (3 times) > 4NA (Optimal)\n\n*NA = Normal Attack, CA = Charged Attack\n\nThe recommended combo can be performed consistently even without attack speed buffs, the optimal combo while a tad stronger is also significantly more difficult to perform.",
-        note: "Raiden's Elemental Burst damage depends on her <b>team's energy consumption prior to her Burst</b>, and her Burst <b>restores a comfortable amount of energy for her team</b> (which is further amplified by her passive). This is especially convenient on teams that doesn't conflict with her element and wants the energy provision. (i.e. Eula, Electro, National teams, etc.). Raiden has no issues with firing her ult off cooldown after reaching about 200% Energy Recharge, but it is possible to raise it higher for better energy restoration for her team.\n\n<b>Regarding Weapon Choices: This list assumes the average across a variety of buffs. \nSkyward Spine: </b>Assumes that you are utilizing the ATK SPD buff to access higher damage combos. \n<b>Wavebreaker's Fin: </b>At <b>[R5], </b>this weapon is relatively equal to <b>Staff of Homa,</b> depending on your total team burst cost.\n\n<b>Regarding Artifact Sets:\nTenacity of the Millelith (4): </b>This set acts as a low investment support oriented set. Raiden is an excellent <b>Tenacity of the Millelith (4)</b> holder since her Elemental Skill has 100% uptime and procs very easily. Do note that if your Raiden is equipping this set, then she will sacrifice her personal damage.\n<b>\nRegarding Main Stats Priority: \n</b>Raiden's main stat priority for Sands and Goblet entirely depends on the substats, whether she has external buffs, and which weapon she is running. You can find a more detailed list of suggestions from <a href=\"https://docs.google.com/spreadsheets/d/1VdRUAKFUoKkceIghV5tCfr3kfoiH59mcFOMorI9jYrw/edit\">ZΛNTO#4984's mastersheet here</a><a href=\"https://docs.google.com/spreadsheets/d/1VdRUAKFUoKkceIghV5tCfr3kfoiH59mcFOMorI9jYrw/edit\"> </a>or run it on a calculator/optimizer",
       },
     },
   },

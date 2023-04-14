@@ -3,7 +3,6 @@ import { Route, Routes } from 'react-router-dom'
 
 //! Import CSS
 import './styles/globals.css'
-import './styles/genshin.css'
 
 import { NotFound } from './NotFound'
 import Home from './pages/Home'

@@ -4,7 +4,6 @@ import React from 'react'
 //! Components
 import Sidebar from '../../components/genshin/sidebar/Sidebar'
 import CardCharacter from '../../components/genshin/characters/CardCharacter'
-import Footbar from '../../components/genshin/Footbar'
 
 //! Data
 import { characters } from '../../data/characters'
@@ -20,27 +19,32 @@ function GenshinCharacters() {
     return (
         <>
             <Sidebar />
+            <div className="genshin-sidebar fixed top-0 right-0 h-full z-[100]"></div>
 
-            <section className="genshin-main-section relative duration-500 ease-in-out" style={{ backgroundColor: "var(--secondary-color)" }}>
-                <span className="text-white text-6xl font-black">Characters</span>
+            <section className="genshin-main-section mx-auto relative duration-300 ease-in-out" style={{ backgroundColor: "var(--secondary-color)" }}>
+                <div className="flex flex-wrap mx-0">
+                    <div className="text-white text-6xl font-black">
+                        <h1>Characters</h1>
+                    </div>
 
-                {/* Add Filters */}
+                    {/* Add Filters */}
 
-                <div className="px-4 flex flex-wrap mt-2">
-                    {Object.values(characters).map((item) =>
-                        <CardCharacter
-                            key={item.id}
-                            id={item.id}
-                            href="/genshin/characters"
-                            name={item.name}
-                            rary={item.rarity}
-                            elementId={item.element.id}
-                            elementName={item.element.name}
-                        />
-                    )}
+                    <div className=""></div>
+
+                    <div className="rounded flex flex-wrap" style={{ backgroundColor: "var(--third-color)" }}>
+                        {Object.values(characters).map((item) =>
+                            <CardCharacter
+                                key={item.id}
+                                id={item.id}
+                                href="/genshin/characters"
+                                name={item.name}
+                                rary={item.rarity}
+                                elementId={item.element.id}
+                                elementName={item.element.name}
+                            />
+                        )}
+                    </div>
                 </div>
-
-                <Footbar />
             </section>
         </>
     )

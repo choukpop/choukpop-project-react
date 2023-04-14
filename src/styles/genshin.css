@@ -1,9 +1,11 @@
 :root {
     --width-sidebar: 250px;
+    --padding-characters: 32px;
 
-    --primary-color: #202442;
-    --secondary-color: #25294A;
-    --bg-item: #2D325A;
+    --primary-color: #101633;
+    --secondary-color: #1c1f46;
+    --third-color: #24285a;
+    --fourth-color: #303b7a;
 }
 
 .genshin-body {
@@ -13,10 +15,6 @@
 .genshin-sidebar {
     width: var(--width-sidebar);
     background: var(--primary-color);
-}
-
-.genshin-sidebar .genshin-nav-links::-webkit-scrollbar {
-    display: none;
 }
 
 .genshin-sidebar .genshin-nav-links li.show-menu .gesnhin-sub-menu {
@@ -37,23 +35,19 @@
 
 
 
-
-
-
-
-
-
-
-
 .genshin-main-section {
-    left: var(--width-sidebar);
-    width: calc(100% - var(--width-sidebar));
-    height: 100vh;
+    padding: var(--padding-characters);
+    max-width: 1000px;
 }
 
-@media only screen and (max-width: 1650px) {
+@media (max-width: 1480px) {
     .genshin-main-section {
-        height: 100%;
-    } 
+        max-width: 900px;
+    }
 }
 
+@media (max-width: 1380px) {
+    .genshin-main-section {
+        max-width: 800px;
+    }
+}
